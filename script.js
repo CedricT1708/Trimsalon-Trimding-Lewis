@@ -56,7 +56,7 @@ showCoat('krul');
 // Afspraakformulier: opent het e-mailprogramma van de bezoeker.
 // TODO: vervang EMAIL_ADRES door het echte e-mailadres van de salon,
 // of koppel het formulier aan een dienst zoals Formspree of Netlify Forms.
-const EMAIL_ADRES = 'info@voorbeeld.be';
+const EMAIL_ADRES = 'tindemanscedric@gmail.com';
 const form = document.getElementById('form');
 
 // Datumkiezer: geen data in het verleden
