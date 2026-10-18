@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trimding Lewis – Honden- en kattentrimsalon in Kruibeke</title>
+  <meta name="description" content="Rustige honden- en kattentrimsalon in Kruibeke (Beveren-Kruibeke-Zwijndrecht). Trimmen, wassen en verzorgen voor elke vacht en elk karakter. Maak een afspraak.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Structured data voor Google (lokale zoekresultaten) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "PetGroomer",
+    "name": "Trimding Lewis",
+    "telephone": "+32469681456",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Jan Frans Faveletstraat 44",
+      "postalCode": "9120",
+      "addressLocality": "Kruibeke",
+      "addressCountry": "BE"
+    },
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.7", "reviewCount": "15" }
+  }
+  </script>
+</head>
+<body>
+
+<a class="skip" href="#main">Naar de inhoud</a>
+
+<header class="site-header">
+  <a class="brand" href="#top" aria-label="Trimding Lewis – naar boven">
+    <img class="logo-img" src="images/logo.png" alt="Trimding Lewis, honden- en kattentrimsalon">
+  </a>
+  <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav id="nav" class="nav">
+    <a href="#vacht">Vachttype</a>
+    <a href="#diensten">Diensten</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#praktisch">Praktisch</a>
+    <a class="btn btn-small" href="tel:+32469681456">Bel 0469 68 14 56</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-text">
+      <p class="rating-pill"><strong>4,7</strong> op Google · 15 reviews</p>
+      <h1>Een rustige trimbeurt voor de hond of kat die het liefst gewoon thuis blijft.</h1>
+      <p class="lead">Femke neemt de tijd voor elk dier. Ook voor de bange, de eigenwijze of de hond of kat die al eens een slechte ervaring had. Zo komt je viervoeter fris, gekamd en ontspannen weer buiten.</p>
+      <div class="hero-actions">
+        <a class="btn" href="#afspraak">Afspraak aanvragen</a>
+        <a class="btn btn-ghost" href="#vacht">Wat past bij mijn hond?</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <img src="images/salon.png" alt="Een Border Collie netjes getrimd op de trimtafel bij Trimding Lewis">
+    </div>
+  </section>
+
+  <!-- VACHTTYPE KIEZER (het onthoudbare element) -->
+  <section class="section" id="vacht" aria-labelledby="vacht-titel">
+    <h2 id="vacht-titel">Welke vacht heeft jouw hond?</h2>
+    <p class="section-intro">Elke vacht vraagt een andere aanpak. Kies een type en zie wat we meestal doen en hoe vaak je best langskomt.</p>
+
+    <div class="coat" data-coat>
+      <div class="coat-tabs" role="tablist" aria-label="Vachttype">
+        <button role="tab" aria-selected="true"  aria-controls="coat-panel" id="tab-krul"  data-key="krul">Krullend (poedel, doodle)</button>
+        <button role="tab" aria-selected="false" aria-controls="coat-panel" id="tab-lang"  data-key="lang">Langhaar (Aussie, Border Collie)</button>
+        <button role="tab" aria-selected="false" aria-controls="coat-panel" id="tab-ruw"   data-key="ruw">Ruwhaar (terriër, schnauzer)</button>
+        <button role="tab" aria-selected="false" aria-controls="coat-panel" id="tab-kort"  data-key="kort">Korthaar</button>
+      </div>
+      <div class="coat-panel" id="coat-panel" role="tabpanel" aria-live="polite" tabindex="0">
+        <h3 id="coat-title"></h3>
+        <p id="coat-text"></p>
+        <dl>
+          <div><dt>Wat we doen</dt><dd id="coat-do"></dd></div>
+          <div><dt>Hoe vaak</dt><dd id="coat-freq"></dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIENSTEN -->
+  <section class="section section-tint" id="diensten" aria-labelledby="diensten-titel">
+    <h2 id="diensten-titel">Diensten</h2>
+    <p class="section-intro">Een volledige beurt duurt zo lang als jouw hond nodig heeft. Prijzen hangen af van ras, grootte en vachtconditie.</p>
+    <ul class="services">
+      <li>
+        <h3>Volledige trimbeurt</h3>
+        <p>Wassen, föhnen, kammen, scheren of knippen in de gewenste stijl, nagels en oren.</p>
+        <span class="price">Prijs op aanvraag</span> <!-- TODO: vul prijzen in, bv. "Vanaf € 45" -->
+      </li>
+      <li>
+        <h3>Kattentrimmen</h3>
+        <p>Uitkammen, ontklitten en trimmen voor langhaarkatten, in een rustige omgeving en op het tempo van je kat.</p>
+        <span class="price">Prijs op aanvraag</span>
+      </li>
+      <li>
+        <h3>Wassen en föhnen</h3>
+        <p>Voor honden die geen knipbeurt nodig hebben, maar wel een frisse, zachte vacht.</p>
+        <span class="price">Prijs op aanvraag</span>
+      </li>
+      <li>
+        <h3>Ontklitten en uitkammen</h3>
+        <p>Voorzichtig en in rust, zodat de huid niet pijn doet. Bij zware klitten bespreken we eerst de opties.</p>
+        <span class="price">Prijs op aanvraag</span>
+      </li>
+      <li>
+        <h3>Nagels, oren en pootjes</h3>
+        <p>Een snelle onderhoudsbeurt tussen twee trimbeurten door.</p>
+        <span class="price">Prijs op aanvraag</span>
+      </li>
+      <li>
+        <h3>Kennismaking voor pups en angstige dieren</h3>
+        <p>Korte, rustige bezoekjes zodat je hond of kat de salon leert kennen voor de echte beurt.</p>
+        <span class="price">Prijs op aanvraag</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="section" id="reviews" aria-labelledby="reviews-titel">
+    <h2 id="reviews-titel">Wat baasjes zeggen</h2>
+    <p class="section-intro">Gemiddeld 4,7 uit 15 Google-reviews.</p>
+    <div class="reviews">
+      <blockquote>
+        <p>Femke is rustig en straalt vertrouwen uit, wat voor onze Aussie heel belangrijk is. Ook de moeilijkste hond is in heel goede handen.</p>
+        <footer>Annick Jones</footer>
+      </blockquote>
+      <blockquote>
+        <p>Onze 7-jarige Border Collie wordt goed gesoigneerd. Helemaal tevreden met de super service.</p>
+        <footer>Sven Kim</footer>
+      </blockquote>
+      <blockquote>
+        <p>We zijn heel tevreden over de service en de vriendelijke persoon.</p>
+        <footer>Antoine Keups, Local Guide</footer>
+      </blockquote>
+    </div>
+    <p class="small"><a href="https://www.google.com/maps/search/?api=1&query=Trimsalon+Trimding+Lewis+Jan+Frans+Faveletstraat+44+Kruibeke" target="_blank" rel="noopener">Lees alle reviews op Google Maps</a></p>
+  </section>
+
+  <!-- AFSPRAAK -->
+  <section class="section section-dark" id="afspraak" aria-labelledby="afspraak-titel">
+    <div class="appointment">
+      <div>
+        <h2 id="afspraak-titel">Afspraak aanvragen</h2>
+        <p>Vul het formulier in en Femke neemt zo snel mogelijk contact op om een moment af te spreken. Liever bellen? Dat kan ook op <a href="tel:+32469681456">0469 68 14 56</a>.</p>
+      </div>
+      <form id="form" novalidate>
+        <label>Naam baasje
+          <input name="naam" type="text" autocomplete="name" required>
+        </label>
+        <label>Telefoon of e-mail
+          <input name="contact" type="text" autocomplete="tel" required>
+        </label>
+        <fieldset class="choice">
+          <legend>Gaat het om een hond of een kat?</legend>
+          <label class="radio"><input type="radio" name="diersoort" value="Hond" required> Hond</label>
+          <label class="radio"><input type="radio" name="diersoort" value="Kat" required> Kat</label>
+        </fieldset>
+        <div class="row">
+          <label>Naam hond of kat
+            <input name="hond" type="text" required>
+          </label>
+          <label>Ras
+            <input name="ras" type="text">
+          </label>
+        </div>
+        <label>Gewenste datum
+          <input name="datum" id="datum" type="date" required>
+          <small class="hint">Dit is een voorkeur. Femke bevestigt de afspraak nog per telefoon of e-mail.</small>
+        </label>
+        <label>Opmerkingen (vachttype, angstig, eerdere ervaringen)
+          <textarea name="bericht" rows="4"></textarea>
+        </label>
+        <button class="btn btn-yellow" type="submit">Aanvraag versturen</button>
+        <p class="form-msg" id="form-msg" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- PRAKTISCH -->
+  <section class="section" id="praktisch" aria-labelledby="praktisch-titel">
+    <h2 id="praktisch-titel">Praktisch</h2>
+    <div class="practical">
+      <div>
+        <h3>Adres</h3>
+        <address>
+          Trimding Lewis<br>honden- &amp; kattentrimsalon<br>
+          Jan Frans Faveletstraat 44<br>
+          9120 Kruibeke
+        </address>
+        <p><a href="tel:+32469681456">0469 68 14 56</a></p>
+        <p><a href="https://www.google.com/maps/dir/?api=1&destination=Jan+Frans+Faveletstraat+44+9120+Kruibeke" target="_blank" rel="noopener">Route plannen</a></p>
+
+        <h3>Openingsuren</h3>
+        <!-- TODO: pas de uren aan -->
+        <table class="hours">
+          <tr><th scope="row">Maandag</th><td>Op afspraak</td></tr>
+          <tr><th scope="row">Dinsdag</th><td>Op afspraak</td></tr>
+          <tr><th scope="row">Woensdag</th><td>Op afspraak</td></tr>
+          <tr><th scope="row">Donderdag</th><td>Op afspraak</td></tr>
+          <tr><th scope="row">Vrijdag</th><td>Op afspraak</td></tr>
+          <tr><th scope="row">Zaterdag</th><td>Op afspraak</td></tr>
+          <tr><th scope="row">Zondag</th><td>Gesloten</td></tr>
+        </table>
+      </div>
+      <div class="map">
+        <iframe title="Kaart van Trimding Lewis" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Jan+Frans+Faveletstraat+44,+9120+Kruibeke&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>© <span id="year"></span> Trimding Lewis · Jan Frans Faveletstraat 44, 9120 Kruibeke</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
